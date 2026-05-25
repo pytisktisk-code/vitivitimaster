@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brand-brown: #3D2B1F;
+  --color-brand-charcoal: #1A1A1A;
+  --color-brand-olive: #4B5320;
+  --color-brand-cream: #F5F5DC;
+  --color-brand-beige: #D2B48C;
+  --color-brand-dark-green: #1B2B1B;
+}
+
+@layer base {
+  html,
+  body {
+    @apply text-brand-charcoal bg-brand-cream overflow-x-hidden;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+
+  .glass-dark {
+    @apply bg-black/40 backdrop-blur-xl border border-white/10;
+  }
+}
